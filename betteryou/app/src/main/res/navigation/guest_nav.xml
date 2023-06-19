@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guest_nav"
+    app:startDestination="@id/guestHomeFragment">
+
+    <fragment
+        android:id="@+id/guestExampleFragment"
+        android:name="com.kazim.betteryou.GuestFragments.GuestExampleFragment"
+        android:label="fragment_guest_example"
+        tools:layout="@layout/fragment_guest_example" />
+    <fragment
+        android:id="@+id/guestHomeFragment"
+        android:name="com.kazim.betteryou.GuestFragments.GuestHomeFragment"
+        android:label="fragment_guest_home"
+        tools:layout="@layout/fragment_guest_home" />
+    <fragment
+        android:id="@+id/guestSubscriptionFragment"
+        android:name="com.kazim.betteryou.GuestFragments.GuestSubscriptionFragment"
+        android:label="fragment_guest_subscription"
+        tools:layout="@layout/fragment_guest_subscription" >
+        <action
+            android:id="@+id/action_guestSubscriptionFragment_to_bankcardFragment2"
+            app:destination="@id/bankcardFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankcardFragment2"
+        android:name="com.kazim.betteryou.GuestFragments.BankcardFragment"
+        android:label="fragment_bankcard"
+        tools:layout="@layout/fragment_bankcard" />
+</navigation>

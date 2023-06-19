@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".UserFragments.MessageFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesaj Gönder"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="40dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/custom_btn1"
+        android:layout_margin="15dp">
+
+        <EditText
+            android:layout_marginTop="200dp"
+            android:hint="  Sormak istediğinz soruyu sorunuz"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/messageText"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_mail"
+            android:layout_height="100dp"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:background="@drawable/custom_input"
+            />
+        <Button
+            android:layout_gravity="right"
+            android:id="@+id/messageBtn"
+            android:layout_width="175dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_btn2"
+            android:clickable="true"
+            android:text="Mesajı gönder"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

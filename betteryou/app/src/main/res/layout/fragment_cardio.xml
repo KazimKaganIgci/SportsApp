@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".UserFragments.CardioFragment">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kardiyo "
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="40dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_btn1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/beginnerBtn"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:text="Beginner"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/intermediateBtn"
+
+                android:layout_width="130dp"
+                android:textSize="11dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="60dp"
+                android:text="intermediate
+"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cardirecyler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            tools:listitem="@layout/moves_item"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

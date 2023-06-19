@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:background="#000000"
+tools:context=".FirstlyFragmets.RegisterFragment"
+android:layout_height="match_parent">
+
+<TextView
+    android:layout_marginBottom="60dp"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="75dp"
+    android:textColor="#FFFCFC"
+    android:textStyle=""
+    android:text="BetterYou"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+<EditText
+    android:hint="  Adınızı Giriniz"
+    android:layout_margin="10dp"
+    android:id="@+id/nametext"
+    android:textSize="20dp"
+    android:drawableStart="@drawable/ic_profile"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp"
+    android:background="@drawable/custom_input"
+    />
+
+
+    <EditText
+        android:id="@+id/surnametext"
+        android:hint="Soyadınızı Giriniz"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:drawableStart="@drawable/ic_cardio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:background="@drawable/custom_input"
+        />
+
+<EditText
+    android:hint="  Emailinizi girniz"
+    android:layout_margin="10dp"
+    android:id="@+id/emailtext"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:drawableStart="@drawable/ic_mail"
+    android:textSize="20dp"
+    android:padding="5dp"
+    android:background="@drawable/custom_input"
+    />
+
+<EditText
+    android:hint="  Şifreyi giriniz"
+    android:layout_margin="10dp"
+    android:id="@+id/passwordText"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:inputType="textPassword"
+    android:textSize="20dp"
+    android:drawableStart="@drawable/ic_password"
+    android:padding="5dp"
+    android:background="@drawable/custom_input"
+    />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/registerbtn"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_btn2"
+        android:clickable="true"
+        android:text="Kayıt ol"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="Zaten bir hesaba sahibim"
+        android:textColor="#FFFFFF"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:textAlignment="center"></TextView>
+
+
+</LinearLayout>

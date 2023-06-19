@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GuestFragments.BankcardFragment"
+    android:layout_margin="20dp"
+   >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@id/imageView"
+            android:layout_width="360dp"
+            android:layout_height="185dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/card"></ImageView>
+        <TextView
+            android:id="@+id/cardname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BankCard"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"></TextView>
+
+        <TextView
+            android:id="@+id/cardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXX XXXX XXXX XXXX"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/cardname"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/cardHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CardHolder"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/cardNumber"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            ></TextView>
+
+            <LinearLayout
+                android:id="@+id/first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardNumber"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/cardHolder"
+                >
+                <TextView
+                    android:id="@+id/monthtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    ></TextView>
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MM"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    ></TextView>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardNumber"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/first"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardNumber"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/first"
+            >
+            <TextView
+                android:id="@+id/yeartext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                ></TextView>
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YY"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                ></TextView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/cvvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cvv"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_below="@id/cardNumber"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/second"
+            ></TextView>
+
+        <RelativeLayout
+            android:id="@+id/digit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Kart numarasını giriniz:"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="XXXX"
+                android:inputType="number"
+                android:maxLength="4"></EditText>
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/et1"
+                android:hint="XXXX"
+                android:inputType="number"
+                android:maxLength="4"></EditText>
+
+            <EditText
+                android:id="@+id/et3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/et2"
+                android:hint="XXXX"
+                android:inputType="number"
+                android:maxLength="4"
+
+                ></EditText>
+
+            <EditText
+                android:id="@+id/et4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/et3"
+                android:hint="XXXX"
+                android:inputType="number"
+                android:maxLength="4"></EditText>
+
+            <TextView
+                android:id="@+id/n1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Adınızı giriniz:"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/nameEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/n1"
+                android:layout_marginStart="20dp"
+                android:hint="Kart Sahibinin adı"></EditText>
+
+            <TextView
+                android:id="@+id/n2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameEdittext"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Ay/Yıl giriniz:"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/monthEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/n2"
+                android:layout_marginStart="20dp"
+                android:hint="MM"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <EditText
+                android:id="@+id/yearEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/n2"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/monthEdittext"
+                android:hint="YY"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <TextView
+                android:id="@+id/n3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/monthEdittext"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Cvv giriniz:"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <EditText
+                android:id="@+id/cvvEdittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/monthEdittext"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/n3"
+                android:hint="CVV"
+                android:inputType="number"
+                android:maxLength="3" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:textSize="15dp"
+                android:layout_below="@id/n3"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_above="@id/digit"
+                android:text="Üye ol"
+                tools:ignore="NotSibling"></Button>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

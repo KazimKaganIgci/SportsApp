@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "990023429067",
+    "project_id": "betteryou-72d61",
+    "storage_bucket": "betteryou-72d61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990023429067:android:5bbc11e033e1edbd04e44e",
+        "android_client_info": {
+          "package_name": "com.kazim.betteryou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990023429067-g4tg39qdmdeve8k26lstcpqna9imh6he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLMVo6LWQePl3md5DJySYL16XU6oQsaIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990023429067-g4tg39qdmdeve8k26lstcpqna9imh6he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
